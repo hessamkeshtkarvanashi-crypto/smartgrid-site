@@ -1,0 +1,192 @@
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* very light overlay to help contrast */
+  z-index: 0;
+}
+
+.header h1, .header p {
+  position: relative;
+  z-index: 1; 
+}
+
+
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent black overlay */
+  z-index: 0;
+}
+
+.header h1, .header p {
+  position: relative;
+  z-index: 1; /* puts text above the overlay */
+}
+
+
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 300px; /* adjust the height as needed */
+  background-image: url('https://i.imgur.com/vVNDgZm.png'); /* replace with your direct Imgur link */
+  background-size: cover;    /* makes image cover the entire div */
+  background-position: center; /* centers the image */
+  display: flex;
+  align-items: center;       /* vertically centers the title */
+  justify-content: center;   /* horizontally centers the title */
+  color: white;              /* title text color */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes text readable */
+}
+
+
+.top-image {
+  max-width: 800px; /* image won’t be wider than this */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;   /* centers the image */
+  display: block;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.site-header {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.navbar {
+  background: #023e8a;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background: #00b4d8;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.bg-light {
+  background: #f9f9f9;
+}
+
+h2 {
+  color: #023e8a;
+  border-bottom: 2px solid #00b4d8;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.pub-list li {
+  margin-bottom: 10px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.student-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.student-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.student-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+.student-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
